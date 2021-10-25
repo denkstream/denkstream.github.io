@@ -1,0 +1,89 @@
+:root,
+html[data-theme=light] {
+  box-sizing: border-box;
+  --design-animation-default: all 0.2s ease-in-out;
+  --border-radius: .3rem;
+  --base-unit: 1.2rem;
+  --font-text: "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+  --font-headings: "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+  --font-mono: "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    Menlo,
+    Courier,
+    monospace;
+}
+
+:root {
+  --color-background-default: rgba(255, 255, 255, 1);
+  --color-wallintro-default: linear-gradient(210deg, rgb(200 223 236) 0%, rgb(245 244 226) 100%);
+  --color-text-primary: rgb(80 84 92);
+  --color-headings-primary: #0a0c10;
+  --color-link-primary: #3300f7;
+  --color-link-hover: crimson;
+  --color-link-current: black;
+  --color-highlight-default: aliceblue;
+  --color-highlight-extra: rgb(249 249 249);
+  --color-highlight-warn: #f3e4e4;
+  --color-highlight-friendly: linear-gradient(45deg, rgb(225 255 229), rgb(241 238 206));
+  --color-highlight-friendly-text: #285428;
+  --color-highlight-gray: #ebecec;
+  --color-highlight-special: rgb(17 220 175 / 14%);
+  --design-shadow-primary: rgba(84, 102, 120, 0.396) 0px 20px 30px -10px;
+  --show-modifier-light: initial;
+  --show-modifier-dark: none;
+  transition: var(--design-animation-default);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--color-text-primary);
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--base-unit);
+  background: var(--color-background-default);
+  hyphens: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link-primary);
+  transition: var(--design-animation-default);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+a.current {
+  color: var(--color-link-current);
+}
+
+p {
+  font-size: var(--base-unit);
+}

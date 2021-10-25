@@ -1,0 +1,4 @@
+{% for singleSpektrum in site.data.spektrum %}
+  <h2>{{ singleSpektrum.title }}</h2>
+  {{ singleSpektrum.text | markdownify }}
+{% endfor %}
