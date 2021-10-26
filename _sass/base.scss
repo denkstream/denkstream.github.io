@@ -35,10 +35,9 @@ html[data-theme=light] {
 }
 
 :root {
-  --color-background-default: rgba(255, 255, 255, 1);
-  --color-wallintro-default: linear-gradient(210deg, rgb(200 223 236) 0%, rgb(245 244 226) 100%);
-  --color-text-primary: rgb(80 84 92);
-  --color-headings-primary: #0a0c10;
+  --color-background-default: #161718;
+  --color-text-primary: #e5e5e5;
+  --color-headings-primary: #CEDBE2;
   --color-link-primary: #3300f7;
   --color-link-hover: crimson;
   --color-link-current: black;
