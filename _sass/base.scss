@@ -132,8 +132,8 @@ h3 {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-.front { grid-area: 1 / 1 / 2 / 2; }
-.side { grid-area: 1 / 1 / 2 / 2;
+.focus { grid-area: 1 / 1 / 2 / 2; }
+.image { grid-area: 1 / 1 / 2 / 2;
   background-image: url('assets/img/bg-intro.png');
  }
 }
