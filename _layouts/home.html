@@ -4,6 +4,18 @@ layout: home
 ---
 {% include head.html %}
 
+<nav>
+<div class="section-nav">
+<div class="section-nav__logotype">
+<img src="{{ site.url }}/assets/img/ds-logo.svg" alt="" class="header-logotype__mobile">
+</div>
+<div class="section-nav__text">
+<strong>Denkstream</strong><br>
+Konzepte für Design und<br>Benutzererfahrung
+</div>
+</div>
+</nav>
+
 <h1>{{ page.introTitle }}</h1>
 {{ page.introText | markdownify }}
 
