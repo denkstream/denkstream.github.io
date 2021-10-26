@@ -1,0 +1,27 @@
+[
+  {
+    "network": "E-Mail",
+    "icon": "",
+    "url": "mailto:stevan.wurm@denkstream.com"
+  },
+  {
+    "network": "LinkedIn",
+    "icon": "",
+    "url": "http://linkedin.com/in/stevanwurm"
+  },
+  {
+    "network": "XING",
+    "icon": "",
+    "url": "https://www.xing.com/profile/Stevan_Wurm/cv"
+  },
+  {
+    "network": "Behance",
+    "icon": "",
+    "url": "https://www.behance.net/denkstream"
+  },
+  {
+    "network": "Instagram",
+    "icon": "",
+    "url": "https://www.instagram.com/roedelsee/"
+  }
+]

@@ -1,0 +1,6 @@
+<ul>
+{% for singleContact in site.data.contact %}
+<li><a href="{{ singleContact.url }}"></a>{{ singleContact.network }}</a></li>
+{{ singleContact.text }}
+{% endfor %}
+</ul>
