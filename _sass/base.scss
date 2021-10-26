@@ -135,6 +135,7 @@ h3 {
 .focus { grid-area: 1 / 1 / 2 / 2; }
 .image { grid-area: 1 / 1 / 2 / 2;
   background-image: url('../img/bg-intro.png');
+  border-radius: 0 0 0 99rem;
  }
 }
 
