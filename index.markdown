@@ -15,7 +15,7 @@ greenTitle: |-
 greenText: |-
   Gerne überprüfe ich Ihre bestehende Website, ob man sie nachhaltiger gestalten kann. Ein nachhaltiges Design ist möglich, performant und hilft der Umwelt.
 aboutTitle: |-
-  Hallo   Hallo 
+  Hallo 
 aboutText: |-
   Mein Name ist Stevan Wurm, ich bin Sozialarbeiter und Autodidakt in Sachen Web- und Digitaltechnologie aus Rödelsee.
   Besonders interessiert mich die Zugänglichkeit im Internet, oder anders ausgedrückt, wie man etwas so darstellt, dass man es sofort versteht.
