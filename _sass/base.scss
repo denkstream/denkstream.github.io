@@ -3,7 +3,7 @@ html[data-theme=light] {
   box-sizing: border-box;
   --design-animation-default: all 0.2s ease-in-out;
   --border-radius: .3rem;
-  --base-unit: 1.2rem;
+  --base-unit: 1rem;
   --font-text: "Inter",
     -apple-system,
     BlinkMacSystemFont,
@@ -86,9 +86,21 @@ a.current {
 }
 
 p {
-  font-size: var(--base-unit);
+  font-size: calc(var(--base-unit)*1);
+  line-height: calc(var(--base-unit)*1);
 }
 
 h1, h2, h3 {
-  font-family: var(--font-headings)
+  font-family: var(--font-headings);
+}
+
+h1 {
+  font-size: calc(var(--base-unit)*1.4);
+}
+
+h2 {
+  font-size: calc(var(--base-unit)*1.3);
+}
+h3 {
+  font-size: calc(var(--base-unit)*1.2);
 }
