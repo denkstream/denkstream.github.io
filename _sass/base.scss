@@ -68,6 +68,7 @@ body {
   font-size: var(--base-unit);
   background: var(--color-background-default);
   hyphens: auto;
+  padding: calc(var(--base-unit)*2)
 }
 
 a {
