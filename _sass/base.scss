@@ -112,7 +112,7 @@ h3 {
 .section-nav {
     display: grid;
     align-items: center;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     gap: calc(var(--base-unit)*1);
   &__logotype {
     img {
