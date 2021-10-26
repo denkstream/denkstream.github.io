@@ -123,3 +123,18 @@ h3 {
     font-family: var(--font-headings);
   }
 }
+
+// Layout
+
+.container-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+.front { grid-area: 1 / 1 / 2 / 2; }
+.side { grid-area: 1 / 1 / 2 / 2;
+  background-image: url('assets/img/bg-intro.png');
+ }
+}
+

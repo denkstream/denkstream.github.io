@@ -4,6 +4,8 @@ layout: home
 ---
 {% include head.html %}
 
+
+
 <nav>
 <div class="section-nav">
 <div class="section-nav__logotype">
@@ -16,8 +18,15 @@ Konzepte für Design und<br>Benutzererfahrung
 </div>
 </nav>
 
-<h1>{{ page.introTitle }}</h1>
-{{ page.introText | markdownify }}
+<div class="container">
+  <div class="focus">
+  <h1>{{ page.introTitle }}</h1>
+  {{ page.introText | markdownify }}
+  </div>
+  <div class="image"></div>
+</div>
+
+
 
 {% include spektrum.html %}
 
