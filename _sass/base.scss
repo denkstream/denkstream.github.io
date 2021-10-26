@@ -70,6 +70,8 @@ body {
   padding: calc(var(--base-unit)*2)
 }
 
+// Typography
+
 a {
   text-decoration: none;
   color: var(--color-link-primary);
@@ -103,4 +105,18 @@ h2 {
 }
 h3 {
   font-size: calc(var(--base-unit)*1.2);
+}
+
+// Sections
+
+.section-nav {
+  display: flex;
+  &__logotype {
+    img {
+      height: calc(var(--base-unit)*4);
+    }
+  }
+  &__text {
+    font-family: var(--font-headings);
+  }
 }
