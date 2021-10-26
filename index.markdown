@@ -6,10 +6,11 @@ layout: home
 introTitle: |-
   Ich erstelle für Sie ansprechende<br>
   Websiten und digitale Auftritte
-introText: |-  
-  Seit 2003 erstelle ich Websites für Betriebe, Produzenten, Akademiker, Restaurants, Onlineportale und vieles mehr. 
+introText: |- 
+  Ich bin Stevan Wurm, ein Webdesigner aus Rödelsee in Nähe von Kitzingen. 
+  
+  **Seit 2003 erstelle ich Websites für Betriebe, Produzenten, Akademiker, Restaurants, Onlineportale und vieles mehr.**
 
-  **Alle Projekte haben eine Gemeinsamkeit - die Beratung ist immer persönlich und die digitale Auftritten wurden auf jeden Kunden persönlich zugeschnitten.**
 greenTitle: |-
   Design.
   Aber Nachhaltig?

@@ -53,11 +53,11 @@ h3 { font-size: calc(var(--base-unit)*1.2); }
 
 .section-nav__text { font-family: var(--font-headings); }
 
-.container-top { display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr; gap: 0px 0px; grid-auto-flow: row; }
+.container-top { display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr; gap: 0px 0px; grid-auto-flow: row; padding-top: calc(var(--base-unit)*4); }
 
-.container-top .focus { grid-area: 1 / 1 / 2 / 2; padding: calc(var(--base-unit)*2) 0; }
+.container-top .focus { grid-area: 1 / 1 / 2 / 2; padding: 0 0 calc(var(--base-unit)*2) 0; }
 
-.container-top .focus__main { margin: calc(var(--base-unit)*3) 0; font-size: calc(var(--base-unit)*2); hyphens: none; }
+.container-top .focus__main { margin: 0 0 calc(var(--base-unit)*4) 0; font-size: calc(var(--base-unit)*2); hyphens: none; }
 
 .container-top .image { grid-area: 1 / 1 / 2 / 2; background-image: url("../img/bg-intro.png"); border-radius: 20rem 0 0 0; margin: 0 calc(var(--base-unit)*-2); background-size: cover; }
 
