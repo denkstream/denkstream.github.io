@@ -110,7 +110,10 @@ h3 {
 // Sections
 
 .section-nav {
-  display: flex;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: calc(var(--base-unit)*1);
   &__logotype {
     img {
       height: calc(var(--base-unit)*4);
