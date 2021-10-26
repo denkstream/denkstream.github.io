@@ -67,7 +67,7 @@ body {
   font-size: var(--base-unit);
   background: var(--color-background-default);
   hyphens: auto;
-  padding: calc(var(--base-unit)*2)
+  padding: calc(var(--base-unit)*2);
 }
 
 // Typography
@@ -132,10 +132,19 @@ h3 {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-.focus { grid-area: 1 / 1 / 2 / 2; }
+.focus { grid-area: 1 / 1 / 2 / 2;
+padding: calc(var(--base-unit)*2) 0;
+&__main {
+  margin: calc(var(--base-unit)*3) 0;
+  font-size: calc(var(--base-unit)*2);
+  hyphens: none;
+}
+}
 .image { grid-area: 1 / 1 / 2 / 2;
   background-image: url('../img/bg-intro.png');
-  border-radius: 0 0 0 99rem;
+  border-radius: 20rem 0 0 0;
+  margin: 0 calc(var(--base-unit)*-2);
+  background-size: cover;
  }
 }
 
