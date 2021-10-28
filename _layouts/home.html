@@ -4,32 +4,35 @@ layout: home
 ---
 {% include head.html %}
 
+<div class="section-intro">
+  <header>
+    <nav>
+      <div class="section-nav">
+        <div class="section-nav__logotype">
+          <img src="{{ site.url }}/assets/img/ds-logo.svg" alt="" class="header-logotype__mobile">
+        </div>
+        <div class="section-nav__text">
+          <strong>Denkstream</strong><br>
+          Konzepte für Design und<br>Benutzererfahrung
+        </div>
+      </div>
+    </nav>
 
+    <div class="container-top">
+      <div class="image"></div>
 
-<nav>
-<div class="section-nav">
-<div class="section-nav__logotype">
-<img src="{{ site.url }}/assets/img/ds-logo.svg" alt="" class="header-logotype__mobile">
+      <div class="focus">
+        <h1 class="focus__main">{{ page.introTitle }}</h1>
+        {{ page.introText | markdownify }}
+      </div>
+    </div>
+  </header>
 </div>
-<div class="section-nav__text">
-<strong>Denkstream</strong><br>
-Konzepte für Design und<br>Benutzererfahrung
+
+
+<div class="section-spectrum">
+  {% include spektrum.html %}
 </div>
-</div>
-</nav>
-
-<div class="container-top">
-  <div class="image"></div>
-
-  <div class="focus">
-  <h1 class="focus__main">{{ page.introTitle }}</h1>
-  {{ page.introText | markdownify }}
-  </div>
-</div>
-
-
-
-{% include spektrum.html %}
 
 <h2>{{ page.greenTitle }}</h2>
 {{ page.greenText | markdownify }}

@@ -4,7 +4,7 @@ html[data-theme=light] {
   --design-animation-default: all 0.2s ease-in-out;
   --border-radius: .3rem;
   --base-unit: 1rem;
-  --font-text: "Inter",
+  --font-text: "Ibm Plex Sans",
     -apple-system,
     BlinkMacSystemFont,
     Segoe UI,
@@ -15,7 +15,7 @@ html[data-theme=light] {
     Apple Color Emoji,
     Segoe UI Emoji,
     Segoe UI Symbol;
-  --font-headings: "Poppins",
+  --font-headings: "IBM Plex Sans",
     -apple-system,
     BlinkMacSystemFont,
     Segoe UI,
@@ -35,9 +35,11 @@ html[data-theme=light] {
 }
 
 :root {
-  --color-background-default: #161718;
-  --color-text-primary: #e5e5e5;
-  --color-headings-primary: #CEDBE2;
+  --color-background-default: #e5e5e5;
+  --color-background-default-contrast: #161718;
+  --color-text-primary: #161718;
+  --color-text-primary-contrast: #e5e5e5;
+  --color-headings-primary: #161718;
   --color-link-primary: #3300f7;
   --color-link-hover: crimson;
   --color-link-current: black;
@@ -67,7 +69,6 @@ body {
   font-size: var(--base-unit);
   background: var(--color-background-default);
   hyphens: auto;
-  padding: calc(var(--base-unit)*2);
 }
 
 // Typography
@@ -117,6 +118,7 @@ h3 {
   align-items: center;
   grid-template-columns: auto 1fr;
   gap: calc(var(--base-unit)*1);
+  padding: calc(var(--base-unit)*2);
 
   &__logotype {
     img {
@@ -131,29 +133,48 @@ h3 {
 
 // Layout
 
+.section-intro {
+  background: var(--color-background-default-contrast);
+  color: var(--color-text-primary-contrast);
+
+  h1,
+  h2,
+  h3 {
+    color: var(--color-text-primary-contrast);
+  }
+}
+
+.section-spectrum {
+  padding: calc(var(--base-unit)*2);
+}
+
 .container-top {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  padding-top: calc(var(--base-unit)*4);
+  padding: calc(var(--base-unit)*2);
+
   .focus {
     grid-area: 1 / 1 / 2 / 2;
-    padding: 0 0 calc(var(--base-unit)*2) 0;
 
     &__main {
-      margin: 0 0 calc(var(--base-unit)*4) 0;
+      margin: 0 0 calc(var(--base-unit)*2) 0;
       font-size: calc(var(--base-unit)*2);
       hyphens: none;
+      &::after {
+        display: block;
+        width: 5rem;
+        height: .3rem;
+        background-color: red;
+        content: "";
+        margin-top: calc(var(--base-unit)*2);
+      }
     }
   }
 
   .image {
     grid-area: 1 / 1 / 2 / 2;
-    background-image: url('../img/bg-intro.png');
-    border-radius: 20rem 0 0 0;
-    margin: 0 calc(var(--base-unit)*-2);
-    background-size: cover;
   }
 }
