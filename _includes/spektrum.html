@@ -1,4 +1,16 @@
-{% for singleSpektrum in site.data.spektrum %}
-  <h2>{{ singleSpektrum.title }}</h2>
-  {{ singleSpektrum.text | markdownify }}
-{% endfor %}
+<div class="spectrumMatrix">
+  <div class="spectrumMatrix__box">
+    {% for singleSpektrum in site.data.spektrum %}
+    <div class="singleSpectrum" style="
+    background-image: url('{{ site.url }}/assets/img/{{ singleSpektrum.background }}')
+    ">
+      <div class="singleSpectrum__text">
+        <h2>{{ singleSpektrum.title }}</h2>
+        <div>
+          {{ singleSpektrum.text | markdownify }}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

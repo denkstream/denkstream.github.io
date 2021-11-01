@@ -1,17 +1,17 @@
 [{
     "title": "Webentwicklung",
     "text": "Sie benötigen für Ihr Vorhaben eine Website oder auch eine Intranet-Oberfläche. Gemeinsam erstellen wir ein Konzept für Ihren Auftritt und setzen es um.",
-    "background": "dump-wp-01.jpeg"
+    "background": "bg-code.jpg"
   },
   {
     "title": "Social Media",
     "text": "Soziale Medien spielen im Alltag mittlerweile eine wichtige Rolle und sind ein wichtiger Kommunikationskanal. Ich erschaffe und betreue für Sie attraktive Auftritte.",
-    "background": "dump-wp-02.jpeg"
+    "background": "bg-prototype.jpg"
   },
   {
     "title": "Utilitarisches Grafikdesign",
     "url": "coaching",
     "text": "Die Darstellung der Informationen in einer Art und Weise, die sofort auffällt, ist das Hauptziel des zweckmäßigen Grafikdesigns und ideal sowohl für Werbekampagnen als auch alltägliches Design.",
-    "background": "dump-wp-03.jpeg"
+    "background": "bg-colorful.jpg"
   },
 ]

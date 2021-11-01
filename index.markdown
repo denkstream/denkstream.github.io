@@ -1,15 +1,13 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-title: Demo
+title: Stevan Wurm Webdesign
 layout: home
 introTitle: |-
-  Ich erstelle für Sie ansprechende<br>
+  Ich erstelle für Sie ansprechende
   Websiten und digitale Auftritte
 introText: |- 
-  Ich bin Stevan Wurm, ein Webdesigner aus Rödelsee in nähe von Kitzingen. 
-  
-  **Seit 2003 erstelle ich Websites für Betriebe, Produzenten, Akademiker, Restaurants, Onlineportale und vieles mehr.**
+  Ich bin Stevan Wurm, ein Webdesigner aus Rödelsee in nähe von Kitzingen. Seit 2003 erstelle ich Websites für Betriebe, Produzenten, Akademiker, Restaurants, Onlineportale und vieles mehr.
 
 greenTitle: |-
   Design.

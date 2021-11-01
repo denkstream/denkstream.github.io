@@ -1,41 +1,45 @@
 ---
-title: Heike Stoehr
 layout: home
 ---
 {% include head.html %}
 
-<div class="section-intro">
-  <header>
-    <nav>
-      <div class="section-nav">
-        <div class="section-nav__logotype">
-          <img src="{{ site.url }}/assets/img/ds-logo.svg" alt="" class="header-logotype__mobile">
-        </div>
-        <div class="section-nav__text">
-          <strong>Denkstream</strong><br>
-          Konzepte für Design und<br>Benutzererfahrung
-        </div>
-      </div>
-    </nav>
-
-    <div class="container-top">
-      <div class="image"></div>
-
-      <div class="focus">
-        <h1 class="focus__main">{{ page.introTitle }}</h1>
-        {{ page.introText | markdownify }}
-      </div>
+<nav>
+  <div class="menuBar">
+    <div class="menuBar__logotype">
+      <img src="{{ site.url }}/assets/img/ds-logo.svg" alt="Denkstream Logo" class="menuBar__logotype__image">
     </div>
-  </header>
+    <div class="menuBar__nav">
+      <ul>
+        <li><a href="#">Projekt starten</a></li>
+        <li><a href="#">Über mich</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="introBox">
+  <div class="introBox__text">
+    <h1>{{ page.introTitle }}</h1>
+    {{ page.introText | markdownify }}
+  </div>
 </div>
 
 
-<div class="section-spectrum">
-  {% include spektrum.html %}
-</div>
 
-<h2>{{ page.greenTitle }}</h2>
-{{ page.greenText | markdownify }}
+{% include spektrum.html %}
+
+<div class="greenBox">
+  <div class="greenBox__message">
+    <div class="greenBox__image">
+      <img src="{{ site.url }}/assets/img/green.jpg" alt="Ein grüner Wald">
+    </div>
+    <div class="greenBox__text">
+      <h1>{{ page.greenTitle }}</h1>
+      {{ page.greenText | markdownify }}
+    </div>
+  </div>
+</div>
 
 <h1>{{ page.aboutTitle }}</h1>
 {{ page.aboutText | markdownify }}
