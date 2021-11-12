@@ -1,16 +1,17 @@
-<div class="spectrumMatrix">
-  <div class="spectrumMatrix__box">
-    {% for singleSpektrum in site.data.spektrum %}
-    <div class="singleSpectrum" style="
-    background-image: url('{{ site.url }}/assets/img/{{ singleSpektrum.background }}')
-    ">
-      <div class="singleSpectrum__text">
-        <h2>{{ singleSpektrum.title }}</h2>
-        <div>
-          {{ singleSpektrum.text | markdownify }}
-        </div>
-      </div>
+    <div class="u-theme-blacky">
+      <section class="spectrum">
+        {% for singleSpektrum in site.data.spektrum %}
+        <article>
+          <ul>
+            <li>
+              <ion-icon name="{{ singleSpektrum.icon }}" style="color: {{ singleSpektrum.iconColor }}"></ion-icon>
+            </li>
+            <li>
+              <h2>{{ singleSpektrum.title }}</h2>
+            </li>
+            <li>{{ singleSpektrum.text | markdownify }}</li>
+          </ul>
+        </article>
+        {% endfor %}
+      </section>
     </div>
-    {% endfor %}
-  </div>
-</div>

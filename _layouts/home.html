@@ -3,45 +3,31 @@ layout: home
 ---
 {% include head.html %}
 
-<nav>
-  <div class="menuBar">
-    <div class="menuBar__logotype">
-      <img src="{{ site.url }}/assets/img/ds-logo.svg" alt="Denkstream Logo" class="menuBar__logotype__image">
-    </div>
-    <div class="menuBar__nav">
-      <ul>
-        <li><a href="#">Projekt starten</a></li>
-        <li><a href="#">Über mich</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div class="introBox">
-  <div class="introBox__text">
+<nav>
+<img src="/assets/img/ds-logo.svg">
+<ul>
+  <li><a href="#">Projekt starten</a></li>
+  <li><a href="#">Kontakt</a></li>
+</ul>
+</nav>
+<section class="intro">
     <h1>{{ page.introTitle }}</h1>
     {{ page.introText | markdownify }}
-  </div>
-</div>
-
-
+    <button>Projekt starten <ion-icon class="u-align-center" name="arrow-forward-sharp"></ion-icon></button>
+</section>
 
 {% include spektrum.html %}
 
-<div class="greenBox">
-  <div class="greenBox__message">
-    <div class="greenBox__image">
-      <img src="{{ site.url }}/assets/img/green.jpg" alt="Ein grüner Wald">
-    </div>
-    <div class="greenBox__text">
-      <h1>{{ page.greenTitle }}</h1>
-      {{ page.greenText | markdownify }}
-    </div>
-  </div>
-</div>
+<section class="greentext">
+<ion-icon name="leaf-outline"></ion-icon>
+<h1>{{page.greenTitle}}</h1>
+{{page.greenText | markdownify}}
+</section>
 
+<section class="about">
 <h1>{{ page.aboutTitle }}</h1>
 {{ page.aboutText | markdownify }}
+</section>
 
 {% include foot.html %}

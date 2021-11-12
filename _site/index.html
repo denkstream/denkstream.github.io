@@ -21,88 +21,76 @@
 
 <body>
 
-<nav>
-  <div class="menuBar">
-    <div class="menuBar__logotype">
-      <img src="http://localhost:4000/assets/img/ds-logo.svg" alt="Denkstream Logo" class="menuBar__logotype__image">
-    </div>
-    <div class="menuBar__nav">
-      <ul>
-        <li><a href="#">Projekt starten</a></li>
-        <li><a href="#">Über mich</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div class="introBox">
-  <div class="introBox__text">
+<nav>
+<img src="/assets/img/ds-logo.svg">
+<ul>
+  <li><a href="#">Projekt starten</a></li>
+  <li><a href="#">Kontakt</a></li>
+</ul>
+</nav>
+<section class="intro">
     <h1>Ich erstelle für Sie ansprechende
 Websiten und digitale Auftritte</h1>
     <p>Ich bin Stevan Wurm, ein Webdesigner aus Rödelsee in nähe von Kitzingen. Seit 2003 erstelle ich Websites für Betriebe, Produzenten, Akademiker, Restaurants, Onlineportale und vieles mehr.</p>
 
-  </div>
-</div>
+    <button>Projekt starten <ion-icon class="u-align-center" name="arrow-forward-sharp"></ion-icon></button>
+</section>
 
-
-
-<div class="spectrumMatrix">
-  <div class="spectrumMatrix__box">
-    
-    <div class="singleSpectrum" style="
-    background-image: url('http://localhost:4000/assets/img/bg-code.jpg')
-    ">
-      <div class="singleSpectrum__text">
-        <h2>Webentwicklung</h2>
-        <div>
-          <p>Sie benötigen für Ihr Vorhaben eine Website oder auch eine Intranet-Oberfläche. Gemeinsam erstellen wir ein Konzept für Ihren Auftritt und setzen es um.</p>
-
-        </div>
-      </div>
+    <div class="u-theme-blacky">
+      <section class="spectrum">
+        
+        <article>
+          <ul>
+            <li>
+              <ion-icon name="planet" style="color: "></ion-icon>
+            </li>
+            <li>
+              <h2>Webentwicklung</h2>
+            </li>
+            <li><p>Sie benötigen für Ihr Vorhaben eine Website oder auch eine Intranet-Oberfläche. Gemeinsam erstellen wir ein Konzept für Ihren Auftritt und setzen es um.</p>
+</li>
+          </ul>
+        </article>
+        
+        <article>
+          <ul>
+            <li>
+              <ion-icon name="star" style="color: "></ion-icon>
+            </li>
+            <li>
+              <h2>Social Media</h2>
+            </li>
+            <li><p>Soziale Medien spielen im Alltag mittlerweile eine wichtige Rolle und sind ein wichtiger Kommunikationskanal. Ich erschaffe und betreue für Sie attraktive Auftritte.</p>
+</li>
+          </ul>
+        </article>
+        
+        <article>
+          <ul>
+            <li>
+              <ion-icon name="shapes" style="color: "></ion-icon>
+            </li>
+            <li>
+              <h2>Utilitarisches Grafikdesign</h2>
+            </li>
+            <li><p>Die Darstellung der Informationen in einer Art und Weise, die sofort auffällt, ist das Hauptziel des zweckmäßigen Grafikdesigns und ideal sowohl für Werbekampagnen als auch alltägliches Design.</p>
+</li>
+          </ul>
+        </article>
+        
+      </section>
     </div>
-    
-    <div class="singleSpectrum" style="
-    background-image: url('http://localhost:4000/assets/img/bg-prototype.jpg')
-    ">
-      <div class="singleSpectrum__text">
-        <h2>Social Media</h2>
-        <div>
-          <p>Soziale Medien spielen im Alltag mittlerweile eine wichtige Rolle und sind ein wichtiger Kommunikationskanal. Ich erschaffe und betreue für Sie attraktive Auftritte.</p>
 
-        </div>
-      </div>
-    </div>
-    
-    <div class="singleSpectrum" style="
-    background-image: url('http://localhost:4000/assets/img/bg-colorful.jpg')
-    ">
-      <div class="singleSpectrum__text">
-        <h2>Utilitarisches Grafikdesign</h2>
-        <div>
-          <p>Die Darstellung der Informationen in einer Art und Weise, die sofort auffällt, ist das Hauptziel des zweckmäßigen Grafikdesigns und ideal sowohl für Werbekampagnen als auch alltägliches Design.</p>
-
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div class="greenBox">
-  <div class="greenBox__message">
-    <div class="greenBox__image">
-      <img src="http://localhost:4000/assets/img/green.jpg" alt="Ein grüner Wald">
-    </div>
-    <div class="greenBox__text">
-      <h1>Design.
+<section class="greentext">
+<ion-icon name="leaf-outline"></ion-icon>
+<h1>Design.
 Aber Nachhaltig?</h1>
-      <p>Gerne überprüfe ich Ihre bestehende Website, ob man sie nachhaltiger gestalten kann. Ein nachhaltiges Design ist möglich, performant und hilft der Umwelt.</p>
+<p>Gerne überprüfe ich Ihre bestehende Website, ob man sie nachhaltiger gestalten kann. Ein nachhaltiges Design ist möglich, performant und hilft der Umwelt.</p>
 
-    </div>
-  </div>
-</div>
+</section>
 
+<section class="about">
 <h1>Hallo </h1>
 <p>Mein Name ist Stevan Wurm, ich bin Sozialarbeiter und Autodidakt in Sachen Web- und Digitaltechnologie aus Rödelsee.</p>
 
@@ -110,8 +98,10 @@ Aber Nachhaltig?</h1>
 
 <p>Es geht nicht darum, nur wenige Informationen zu bieten, sondern die vorhandenen Informationen so darzustellen und zu strukturieren, dass Ihre Zielgruppe sie auf Anhieb verstehen kann.</p>
 
+</section>
 
   <script type="text/javascript" src="http://localhost:4000/assets/js/collapsible.js"></script>
-
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
