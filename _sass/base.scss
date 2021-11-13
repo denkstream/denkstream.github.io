@@ -45,8 +45,8 @@ p {
   padding: 0;
   list-style-type: none;
   li {
-    padding: calc(var(--base-unit)*.2) calc(var(--base-unit)*.4;
-    margin: calc(var(--base-unit)*.2) calc(var(--base-unit)*0;
+    padding: calc(var(--base-unit)*.2) calc(var(--base-unit)*.4);
+    margin: calc(var(--base-unit)*.2) calc(var(--base-unit)*0);
     background: rgba(0,0,0,0.1);
     display: inline-block;
   }
