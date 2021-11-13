@@ -99,6 +99,4 @@ p { line-height: 150%; color: var(--color-text-primary); }
 
 .u-theme-blacky p { color: #fff9; }
 
-.u-media-profile { height: calc(var(--base-unit)*5.5); border-radius: 999rem; }
-
 /*# sourceMappingURL=styles.css.map */
