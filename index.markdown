@@ -18,8 +18,6 @@ aboutTitle: |-
   Hallo 
 aboutText: |-
   Mein Name ist Stevan Wurm, ich bin Sozialarbeiter und Autodidakt in Sachen Web- und Digitaltechnologie aus Rödelsee.
-
-  Besonders interessiert mich die Zugänglichkeit im Internet, oder anders ausgedrückt, wie man etwas so darstellt, dass man es sofort versteht.
   
-  Es geht nicht darum, nur wenige Informationen zu bieten, sondern die vorhandenen Informationen so darzustellen und zu strukturieren, dass Ihre Zielgruppe sie auf Anhieb verstehen kann.
+
 ---

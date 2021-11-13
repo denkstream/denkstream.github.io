@@ -1,0 +1,64 @@
+:root,
+html[data-theme=light] {
+  box-sizing: border-box;
+  --design-animation-default: all 0.2s ease-in-out;
+  --border-radius: .3rem;
+  --base-unit: 1rem;
+  --font-text: "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+  --font-headings: "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+  --font-mono: "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    Menlo,
+    Courier,
+    monospace;
+}
+
+:root {
+  --color-background-default: #fff;
+  --color-background-default-contrast: #161718;
+  --color-text-primary: #0009;
+  --color-text-primary-contrast: #e5e5e5;
+  --color-headings-primary: #161718;
+  --color-headings-primary-contrast: #fff;
+  --color-link-primary: #3300f7;
+  --color-link-hover: crimson;
+  --color-link-current: black;
+  --color-highlight-default: aliceblue;
+  --color-highlight-extra: rgb(249 249 249);
+  --color-highlight-warn: #f3e4e4;
+  --color-highlight-friendly: linear-gradient(45deg, rgb(225 255 229), rgb(241 238 206));
+  --color-highlight-friendly-text: #285428;
+  --color-highlight-gray: #ebecec;
+  --color-highlight-special: rgb(17 220 175 / 14%);
+  --design-shadow-primary: rgba(84, 102, 120, 0.396) 0px 20px 30px -10px;
+  --show-modifier-light: initial;
+  --show-modifier-dark: none;
+  transition: var(--design-animation-default);
+  --widthMidi: calc(var(--base-unit)*70);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
