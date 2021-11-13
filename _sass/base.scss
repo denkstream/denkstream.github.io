@@ -74,7 +74,13 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 2px;
+  transition: var(--design-animation-default);
+  &:hover {
+    color: blue;
+  }
 }
 
 h1 {
@@ -123,15 +129,13 @@ nav {
 
     a {
       color: black;
-      text-decoration: underline;
-      text-decoration-color: #161718;
-      text-decoration-thickness: 2px;
     }
   }
 }
 
 .intro {
   padding: calc(var(--base-unit)*5.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+
   h1 {
     margin: 0;
   }
@@ -141,18 +145,22 @@ nav {
   article {
     padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
     margin: calc(var(--base-unit)*1.5) 0;
+
     h2 {
       margin: 0;
       margin-top: calc(var(--base-unit)*.5);
     }
+
     p {
       margin-top: calc(var(--base-unit)*.5);
     }
+
     ion-icon {
       font-size: calc(var(--base-unit)*3.5);
     }
+
     ul {
-    margin: calc(var(--base-unit)*.5) 0;
+      margin: calc(var(--base-unit)*.5) 0;
       padding: 0;
       list-style-type: none;
     }
@@ -161,22 +169,27 @@ nav {
 
 .greentext {
   padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+
   h1 {
     margin: 0;
   }
+
   ion-icon {
-      font-size: calc(var(--base-unit)*3.5);
-      color: #a0d2a0;
+    font-size: calc(var(--base-unit)*3.5);
+    color: #a0d2a0;
   }
 }
+
 .about {
   padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+
   h1 {
     margin: 0;
   }
+
   ion-icon {
-      font-size: calc(var(--base-unit)*3.5);
-      color: #a0d2a0;
+    font-size: calc(var(--base-unit)*3.5);
+    color: #a0d2a0;
   }
 }
 
@@ -184,12 +197,14 @@ nav {
 
 button {
   padding: calc(var(--base-unit)*.5) calc(var(--base-unit)*.8);
-  border-radius: 2px;
+  border-radius: 3px;
   border-style: solid;
   border-color: blue;
   background: blue;
   color: var(--color-headings-primary-contrast);
   font-weight: 600;
+  height: calc(var(--base-unit)*2.8);
+  cursor: pointer;
 }
 
 // Utilities
@@ -200,10 +215,17 @@ button {
 }
 
 .u-theme-blacky {
-    background: black;
-    color: #e5e5e5;
-    p {
+  background: black;
+  color: #e5e5e5;
+
+  p {
     color: #fff9;
-    }
-    overflow: auto;
+  }
+
+  overflow: auto;
+}
+
+.u-media-profile {
+  height: calc(var(--base-unit)*5.5);
+  border-radius: 999rem;
 }
