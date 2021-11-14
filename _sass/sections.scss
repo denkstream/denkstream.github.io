@@ -41,8 +41,9 @@ nav {
 
 .spectrum {
   article {
-    padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
-    margin: calc(var(--base-unit)*1.5) 0;
+    padding: calc(var(--base-unit)*0) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*0);
+    margin: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+
 
     h2 {
       margin: 0;
@@ -51,19 +52,36 @@ nav {
 
     p {
       margin-top: calc(var(--base-unit)*.5);
+      color: #929292;
     }
 
     ion-icon {
-      font-size: calc(var(--base-unit)*3.5);
+      font-size: calc(var(--base-unit)*2);
+      margin-top: calc(var(--base-unit)*.5);
     }
 
     ul {
       margin: calc(var(--base-unit)*.5) 0;
       padding: 0;
       list-style-type: none;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: calc(var(--base-unit)*1);
+    
     }
   }
 }
+  @media screen and(min-width: 768px) {
+    .spectrum {
+    display: grid;
+    gap: 0;
+    padding: 1.5rem;
+    grid-template-columns: auto;
+    article {
+      border-bottom: none;
+    }
+    }
+  }
 
 .greentext {
   padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
@@ -81,7 +99,7 @@ nav {
 .about {
   padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
   background: whitesmoke;
-  margin-right: calc(var(--base-unit)*1.5);
+
   h1 {
     margin: 0;
   }
@@ -89,17 +107,19 @@ nav {
   &--box {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap:calc(var(--base-unit)*1.5);
+    gap: calc(var(--base-unit)*1.5);
+
     &__media {
       display: flex;
       align-items: center;
       position: relative;
+
       .u-media-profile {
         height: calc(var(--base-unit)*8.5);
         border-radius: 0;
         position: absolute;
         top: 0;
-        right: calc(var(--base-unit)*-3.5);
+        right: 0;
       }
     }
   }

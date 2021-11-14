@@ -32,6 +32,8 @@ h1 {
 
 h2 {
   font-size: calc(var(--base-unit)*1.4);
+    color: var(--color-headings-primary);
+
   font-weight: 300;
 }
 
@@ -62,9 +64,11 @@ p {
 }
 
 .u-theme-blacky {
-  background: black;
+  background: rgb(20, 20, 20);
   color: #e5e5e5;
-
+  h1, h2, h3 {
+    color: #fff;
+  }
   p {
     color: #fff9;
   }

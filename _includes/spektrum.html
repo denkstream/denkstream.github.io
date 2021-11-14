@@ -1,4 +1,3 @@
-    <div class="u-theme-blacky">
       <section class="spectrum">
         {% for singleSpektrum in site.data.spektrum %}
         <article>
@@ -6,12 +5,11 @@
             <li>
               <ion-icon name="{{ singleSpektrum.icon }}" style="color: {{ singleSpektrum.iconColor }}"></ion-icon>
             </li>
+            
             <li>
               <h2>{{ singleSpektrum.title }}</h2>
-            </li>
-            <li>{{ singleSpektrum.text | markdownify }}</li>
+            {{ singleSpektrum.text | markdownify }}</li>
           </ul>
         </article>
         {% endfor %}
       </section>
-    </div>
