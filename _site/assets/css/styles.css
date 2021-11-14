@@ -47,6 +47,8 @@ nav ul a { color: black; }
 
 .intro h1 { margin: 0; }
 
+.spectrum { overflow-x: hidden; }
+
 .spectrum article { padding: calc(var(--base-unit)*0) calc(var(--base-unit)*0) calc(var(--base-unit)*0) calc(var(--base-unit)*0); margin: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5); }
 
 .spectrum article h2 { margin: 0; margin-top: calc(var(--base-unit)*.5); }
