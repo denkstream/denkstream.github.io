@@ -1,8 +1,16 @@
-[{
+[
+  {
     "title": "Webentwicklung",
     "text": "Sie benötigen für Ihr Vorhaben eine Website oder auch eine Intranet-Oberfläche. Gemeinsam erstellen wir ein Konzept für Ihren Auftritt und setzen es um.",
     "icon": "planet",
     "iconColor": "royalblue",
+    "background": "bg-code.jpg"
+  },
+  {
+    "title": "Persönliche Beratung",
+    "text": "Ich biete eine persönliche und kostenfreie Erstberatung. So haben wir gemeinsam die Möglichkeit Ihr Projekt besser einzuschätzen.",
+    "icon": "chatbubbles",
+    "iconColor": "deeppink",
     "background": "bg-code.jpg"
   },
   {
@@ -13,11 +21,27 @@
     "background": "bg-prototype.jpg"
   },
   {
-    "title": "Utilitarisches Grafikdesign",
+    "title": "Individuelles Design",
     "url": "coaching",
-    "text": "Die Darstellung der Informationen in einer Art und Weise, die sofort auffällt, ist das Hauptziel des zweckmäßigen Grafikdesigns und ideal sowohl für Werbekampagnen als auch alltägliches Design.",
-    "iconColor": "orange",
-    "icon": "shapes",
+    "text": "Das Design wird exakt auf Ihre Bedürfnisse angepasst, Sie bekommen von mir keine vorgefertigte Designs. Jeder ist Einzigartig, so soll Ihr Design auch sein.",
+    "iconColor": "lightblue",
+    "icon": "color-palette",
     "background": "bg-colorful.jpg"
   },
+  {
+    "title": "Klare Kommunikation",
+    "url": "coaching",
+    "text": "Die Darstellung der Informationen in einer Art und Weise, die sofort auffällt, ist das Hauptziel der klaren Kommunikation und ideal sowohl für Werbekampagnen als auch alltägliches Design.",
+    "iconColor": "gold",
+    "icon": "ellipse",
+    "background": "bg-colorful.jpg"
+  },
+  {
+    "title": "Nachhaltiges Design",
+    "url": "coaching",
+    "text": "Ein nachhaltiges Design ist möglich, performant und hilft der Umwelt. Und es sieht auch gut aus. Wirklich!",
+    "iconColor": "darkseagreen",
+    "icon": "leaf",
+    "background": "bg-colorful.jpg"
+  }
 ]

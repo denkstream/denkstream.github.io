@@ -57,7 +57,7 @@ nav ul a { color: black; }
 
 .spectrum article ion-icon { font-size: calc(var(--base-unit)*3); margin-top: calc(var(--base-unit)*.5); }
 
-.spectrum article ul { margin: calc(var(--base-unit)*.5) 0; padding: 0; list-style-type: none; display: grid; grid-template-columns: auto auto; gap: calc(var(--base-unit)*1); }
+.spectrum article ul { margin: calc(var(--base-unit)*.5) 0; padding: 0; list-style-type: none; display: grid; grid-template-columns: calc(var(--base-unit)*3) auto; gap: calc(var(--base-unit)*1); }
 
 @media screen and (min-width: 768px) { .spectrum { display: grid; gap: 0; padding: 1.5rem; grid-template-columns: auto; } .spectrum article { border-bottom: none; } }
 
