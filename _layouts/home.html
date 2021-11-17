@@ -3,22 +3,26 @@ layout: home
 ---
 {% include head.html %}
 
-
-<nav>
-  <img src="{{ '/assets/img/ds-logo.svg' | relative_url }} ">
-  <ul>
-    <li><a href="#">Projekt starten</a></li>
-    <li><a href="#">Kontakt</a></li>
-  </ul>
-</nav>
-<section class="intro">
-  <h1>{{ page.introTitle }}</h1>
-  {{ page.introText | markdownify }}
-  <button>Projekt starten <ion-icon class="u-align-center" name="arrow-forward-sharp"></ion-icon></button>
-</section>
-
-  <img src="{{ '/assets/img/denkpic.svg' | relative_url }} ">
-
+<div class="container-hero">
+  <div>
+    <nav>
+      <img src="{{ '/assets/img/ds-logo.svg' | relative_url }} ">
+      <ul>
+        <li><a href="#">Projekt starten</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+    <section class="intro">
+      <h1>{{ page.introTitle }}</h1>
+      {{ page.introText | markdownify }}
+      <button>Projekt starten <ion-icon class="u-align-center" name="arrow-forward-sharp"></ion-icon></button>
+    </section>
+  </div>
+  <div>
+    <img src="{{ '/assets/img/denkpic.svg' | relative_url }}" class="u-hero-mobile">
+    <img src="{{ '/assets/img/denkpic-v.svg' | relative_url }}" class="u-hero-large">
+  </div>
+</div>
 
 {% include spektrum.html %}
 

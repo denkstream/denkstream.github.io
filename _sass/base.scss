@@ -75,3 +75,23 @@ p {
 
   overflow: auto;
 }
+
+.u-hero-mobile {
+  display: initial;
+}
+
+.u-hero-large {
+  display: none;
+}
+
+@media screen and(min-width: 768px) {
+.u-hero-mobile {
+  display: none;
+}
+
+.u-hero-large {
+  display: initial;
+  height: 70vh;
+  float: right;
+}
+}
