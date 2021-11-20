@@ -6,9 +6,11 @@ nav {
   gap: calc(var(--base-unit)*1);
   align-items: center;
   justify-content: space-between;
-@media screen and(min-width: 768px) {
-  justify-content: left;
-}
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, .8);
+  backdrop-filter: blur(1rem);
   img {
     height: 3rem;
   }
@@ -24,12 +26,13 @@ nav {
       display: inline-block;
 
       &:not(:first-of-type) {
-        margin-left: calc(var(--base-unit)*.8);
+        margin-left: calc(var(--base-unit)*.5);
       }
     }
 
     a {
       color: black;
+      text-decoration: none;
     }
   }
 }
@@ -40,26 +43,6 @@ nav {
     }
 }
 
-@media screen and(min-width: 768px) {
-
-.container-hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-    &__media {
-      background-image: url('../img/denkpic-v.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-}
-}
-.intro {
-  padding: calc(var(--base-unit)*5.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
-
-  h1 {
-    margin: 0;
-  }
-}
 
 .spectrum {
   overflow-x: hidden;
@@ -94,17 +77,6 @@ nav {
     }
   }
 }
-  @media screen and(min-width: 768px) {
-    .spectrum {
-    display: grid;
-    gap: 0;
-    padding: 1.5rem;
-    grid-template-columns: 1fr 1fr;
-    article {
-      border-bottom: none;
-    }
-    }
-  }
 
 .greentext {
   padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
@@ -145,5 +117,13 @@ nav {
         right: 0;
       }
     }
+  }
+}
+//////
+
+header {
+      padding: calc(var(--base-unit)*2) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+  .header--media {
+    margin: calc(var(--base-unit)*2) calc(var(--base-unit)*-1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*-1.5);    
   }
 }
