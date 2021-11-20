@@ -33,11 +33,13 @@
 
 .l-grid { display: grid; }
 
-nav { padding: calc(var(--base-unit)*1.5); display: flex; align-items: center; justify-content: space-between; }
+nav { padding: calc(var(--base-unit)*1.5); display: flex; gap: calc(var(--base-unit)*1); align-items: center; justify-content: space-between; }
+
+@media screen and (min-width: 768px) { nav { justify-content: left; } }
 
 nav img { height: 3rem; }
 
-nav ul { list-style-type: none; color: black; font-weight: 600; margin: 0; padding: 0; }
+nav ul { list-style-type: none; color: black; font-weight: 500; margin: 0; padding: 0; }
 
 nav ul li { display: inline-block; }
 
@@ -45,7 +47,9 @@ nav ul li:not(:first-of-type) { margin-left: calc(var(--base-unit)*.8); }
 
 nav ul a { color: black; }
 
-@media screen and (min-width: 768px) { .container-hero { display: grid; grid-template-columns: 1fr auto; } }
+.container-hero__media { background: linear-gradient(to top, #141414 calc(var(--base-unit)*4), white calc(var(--base-unit)*4)); }
+
+@media screen and (min-width: 768px) { .container-hero { display: grid; grid-template-columns: 1fr 1fr; } .container-hero__media { background-image: url("../img/denkpic-v.svg"); background-repeat: no-repeat; background-size: cover; background-position: center; } }
 
 .intro { padding: calc(var(--base-unit)*5.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5); }
 

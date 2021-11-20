@@ -3,9 +3,12 @@
 nav {
   padding: calc(var(--base-unit)*1.5);
   display: flex;
+  gap: calc(var(--base-unit)*1);
   align-items: center;
   justify-content: space-between;
-
+@media screen and(min-width: 768px) {
+  justify-content: left;
+}
   img {
     height: 3rem;
   }
@@ -13,7 +16,7 @@ nav {
   ul {
     list-style-type: none;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
     padding: 0;
 
@@ -31,12 +34,23 @@ nav {
   }
 }
 
+.container-hero {
+    &__media {
+      background: linear-gradient(to top, rgb(20, 20, 20) calc(var(--base-unit)*4), rgba(255, 255, 255, 1) calc(var(--base-unit)*4));
+    }
+}
+
 @media screen and(min-width: 768px) {
 
 .container-hero {
   display: grid;
-  grid-template-columns: 1fr auto;
-  
+  grid-template-columns: 1fr 1fr;
+    &__media {
+      background-image: url('../img/denkpic-v.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
 }
 }
 .intro {
