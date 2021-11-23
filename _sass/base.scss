@@ -13,6 +13,23 @@ body {
   hyphens: auto;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns:
+    1fr 10fr 1fr;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.wrapper>* {
+  grid-column: 2;
+}
+
+.full-w {
+  width: 100%;
+  grid-column: 1 / 4;
+}
+
 a {
   text-decoration: underline;
   text-decoration-color: blue;
@@ -42,17 +59,6 @@ p {
   color: var(--color-text-primary)
 }
 
-.tree-of-knowledge {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  li {
-    padding: calc(var(--base-unit)*.2) calc(var(--base-unit)*.4);
-    margin: calc(var(--base-unit)*.2) calc(var(--base-unit)*0);
-    background: rgba(0,0,0,0.1);
-    display: inline-block;
-  }
-}
 
 
 

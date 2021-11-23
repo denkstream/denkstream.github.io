@@ -3,7 +3,6 @@ layout: home
 ---
 {% include head.html %}
 
-
 <nav>
   <img src="{{ '/assets/img/ds-logo.svg' | relative_url }} ">
   <ul>
@@ -11,36 +10,45 @@ layout: home
     <li><a href="#">Kontakt</a></li>
   </ul>
 </nav>
+<div class="wrapper">
+
 <header>
   <h1>{{ page.introTitle }}</h1>
   {{ page.introText | markdownify }}
   <button>Projekt starten <ion-icon class="u-align-center" name="arrow-forward-sharp"></ion-icon></button>
-  <img src="{{ '/assets/img/denkpic.svg' | relative_url }}" class="header--media">
 </header>
+  <img src="{{ '/assets/img/denkpic.svg' | relative_url }}" class="header--media full-w">
 
 
 {% include spektrum.html %}
 
-<h1>{{ page.aboutTitle }}</h1>
+<section class="aboutme">
+  <div class="aboutme--text">
+    <h1>{{ page.aboutTitle }}</h1>
 
-{{ page.aboutText | markdownify }}
+    {{ page.aboutText | markdownify }}
 
-<h2>Kompetenzen</h2>
-<ul class="tree-of-knowledge">
-  <li>
-    <ion-icon class="u-align-center" name="logo-html5"></ion-icon> HTML5
-  </li>
-  <li>
-    <ion-icon class="u-align-center" name="logo-sass"></ion-icon> SCSS
-  </li>
-  <li>
-    <ion-icon class="u-align-center" name="logo-css3"></ion-icon> CSS3
-  </li>
-  <li>
-    <ion-icon class="u-align-center" name="logo-javascript"></ion-icon> JavaScript
-  </li>
-</ul>
-<!--<img src="{{ '/assets/img/profil.jpg' | relative_url }}"> -->
+    <h2>Kompetenzen</h2>
+    <ul class="tree-of-knowledge">
+      <li>
+        <ion-icon class="u-align-center" name="logo-html5"></ion-icon> HTML5
+      </li>
+      <li>
+        <ion-icon class="u-align-center" name="logo-sass"></ion-icon> SCSS
+      </li>
+      <li>
+        <ion-icon class="u-align-center" name="logo-css3"></ion-icon> CSS3
+      </li>
+      <li>
+        <ion-icon class="u-align-center" name="logo-javascript"></ion-icon> JavaScript
+      </li>
+    </ul>
+  </div>
+  <div class="aboutme--profile">
+  </div>
+
+</section>
+</div>
 
 
 {% include foot.html %}

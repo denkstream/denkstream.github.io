@@ -11,6 +11,7 @@ nav {
   z-index: 99;
   background: rgba(255, 255, 255, .8);
   backdrop-filter: blur(1rem);
+
   img {
     height: 3rem;
   }
@@ -38,14 +39,15 @@ nav {
 }
 
 .container-hero {
-    &__media {
-      background: linear-gradient(to top, rgb(20, 20, 20) calc(var(--base-unit)*4), rgba(255, 255, 255, 1) calc(var(--base-unit)*4));
-    }
+  &__media {
+    background: linear-gradient(to top, rgb(20, 20, 20) calc(var(--base-unit)*4), rgba(255, 255, 255, 1) calc(var(--base-unit)*4));
+  }
 }
 
 
 .spectrum {
   overflow-x: hidden;
+
   article {
     padding: calc(var(--base-unit)*0) calc(var(--base-unit)*0) calc(var(--base-unit)*0) calc(var(--base-unit)*0);
     margin: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
@@ -73,7 +75,7 @@ nav {
       display: grid;
       grid-template-columns: calc(var(--base-unit)*3) auto;
       gap: calc(var(--base-unit)*1);
-    
+
     }
   }
 }
@@ -91,39 +93,29 @@ nav {
   }
 }
 
-.about {
-  padding: calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
-  background: whitesmoke;
 
-  h1 {
-    margin: 0;
-  }
-
-  &--box {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: calc(var(--base-unit)*1.5);
-
-    &__media {
-      display: flex;
-      align-items: center;
-      position: relative;
-
-      .u-media-profile {
-        height: calc(var(--base-unit)*8.5);
-        border-radius: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-    }
-  }
-}
 //////
 
 header {
-      padding: calc(var(--base-unit)*2) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+  padding: calc(var(--base-unit)*2) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+
   .header--media {
-    margin: calc(var(--base-unit)*2) calc(var(--base-unit)*-1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*-1.5);    
+    margin: calc(var(--base-unit)*2) calc(var(--base-unit)*-1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*-1.5);
   }
+}
+
+.aboutme {
+    display: grid;
+    grid-template-columns: 1fr calc(var(--base-unit)*12);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". .";
+&--text {
+    padding: calc(var(--base-unit)*2) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5) calc(var(--base-unit)*1.5);
+}
+&--profile {
+  background-image: url(../img/profil.jpg);
+  background-size: cover;
+  background-position: center;
+}
 }
